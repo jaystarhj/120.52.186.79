@@ -5,136 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>联合验收意见书</title>
     <style>
-        html {
-            font-size: 100px;
-        }
-        body, p, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6 {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            font-size: 0.14rem;
-            font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-        input, img {
-            vertical-align: bottom;
-            border: 0 none;
-            outline-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        html, body {
-            height: 100%;
-            background-color: #f2f2f2;
-        }
-        .wrap {
-            min-height: 100%;
-            padding-bottom: 0.2rem;
-            box-sizing: border-box;
-        }
-        .title {
-            font-size: 0.2rem;
-            text-align: center;
-            padding: 0.1rem 0;
-            color: #333;
-        }
-        .titleInfo p {
-            margin: 0.06rem 0.1rem;
-            font-size: 0.14rem;
-        }
-        .content_gcxx {
-            margin: 0.1rem 0.05rem;
-            border: 1px solid #ccc;
-            background-color: #fff;
-        }
-        .content_gcxx li {
-            padding: 0.08rem 0;
-            margin: 0 0.05rem;
-            border-bottom: 1px solid #ccc;
-        }
-        .content_gcxx li:last-child {
-            border-bottom: none;
-        }
-        .content_gcxx li p {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .content_gcxx li label {
-            height: 0.16rem;
-            line-height: 0.16rem;
-        }
-        .danwei p {
-            padding: 0.02rem 0;
-            border-bottom: 1px solid #ccc;
-        }
-        .danwei p:last-child {
-            border-bottom: none;
-        }
-        .dbr span:nth-child(1) {
-            margin-right: 0.4rem;
-        }
-        .danweiTitle {
-            font-weight: 700;
-        }
-        span {
-            word-wrap: break-word;
-            word-break: normal;
-            display: inline-block;
-            min-width: 5em;
-            font-weight: bold;
-        }
+        html{font-size:100px}
+        body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;list-style:none;font-size:.14rem;font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif}
+        input,img{vertical-align:bottom;border:0;outline:none;margin:0;padding:0}
+        html,body{height:100%;background:#f2f2f2}
+        .wrap{min-height:100%;padding-bottom:.2rem;box-sizing:border-box}
+        .title{font-size:.2rem;text-align:center;padding:.1rem 0;color:#333}
+        .content_gcxx{margin:.1rem .05rem;border:1px solid #ccc;background:#fff}
+        .content_gcxx li{padding:.08rem 0;margin:0 .05rem;border-bottom:1px solid #ccc}
+        .content_gcxx li:last-child{border-bottom:none}
+        .content_gcxx li p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+        span{display:inline-block;min-width:5em;word-wrap:break-word;word-break:normal}
     </style>
 </head>
 <body>
     <div id="content" class="wrap">
         <h1 class="title">联合验收意见书</h1>
-        
         <ul id="content_gcxx" class="content_gcxx">
-            <li>
-                <p><span>通知书编号：</span>京竣联验（海）字〔2026〕0027号</p>
-            </li>
-            <li>
-                <p><span>申请单位名称：</span>北京市海淀区新英达培训学校</p>
-            </li>
-            <li>
-                <p><span>工程名称：</span>北京市海淀区新英达培训学校装修工程</p>
-            </li>
-            <li>
-                <p><span>施工许可证号：</span>110108202601120206</p>
-            </li>
-            <li>
-                <p><span>建设单位名称：</span>北京市海淀区新英达培训学校</p>
-            </li>
-            <li>
-                <p><span>结论：</span>通过</p>
-            </li>
-            <li>
-                <p><span>发放时间：</span>2026-04-02</p>
-            </li>
-            <li>
-                <p><span>总建筑面积：</span>540平方米</p>
-            </li>
+            <li><p><span>通知书编号：</span>京竣联验（海）字〔2026〕0027号</p></li>
+            <li><p><span>申请单位名称：</span>北京市海淀区新英达培训学校</p></li>
+            <li><p><span>工程名称：</span>北京市海淀区新英达培训学校装修工程</p></li>
+            <li><p><span>施工许可证号：</span>110108202601120206</p></li>
+            <li><p><span>建设单位名称：</span>北京市海淀区新英达培训学校</p></li>
+            <li><p><span>结论：通过</p></li>
+            <li><p><span>发放时间：</span>2026-04-02</p></li>
+            <li><p><span>总建筑面积：</span>540平方米</p></li>
         </ul>
     </div>
 
-    <!-- 保留原版 rem 自适应（手机上更友好） -->
     <script>
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    if (clientWidth >= 640) {
-                        docEl.style.fontSize = '100px';
-                    } else {
-                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
-                    }
-                };
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-            doc.addEventListener('DOMContentLoaded', recalc, false);
-        })(document, window);
+        (function(doc,win){var e=doc.documentElement,r='orientationchange'in win?'orientationchange':'resize',c=function(){var w=e.clientWidth;if(!w)return;e.style.fontSize=w>=640?'100px':100*(w/640)+'px'};if(!doc.addEventListener)return;win.addEventListener(r,c,false);doc.addEventListener('DOMContentLoaded',c,false)})(document,window);
     </script>
 </body>
 </html>
